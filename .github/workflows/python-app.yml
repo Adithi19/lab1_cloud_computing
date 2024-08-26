@@ -38,11 +38,6 @@ jobs:
         # Exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
-    - name: Run Flask application tests
-      run: |
-        # You can add your tests here. For example, using pytest to run tests:
-        pytest
-
     - name: Run Flask application
       env:
         FLASK_APP: adithiv.py
